@@ -3,6 +3,8 @@ from abc import ABC, abstractmethod
 class AbstractPrivatizer(ABC):
   def privatize(self, data, sensitivityValue=0.001, sensitivityList = None):
     if (type(data) == list):
+      if (len(data) == 0):
+        return []
       privatizedData = []
       counter = 0
       sensitivity = sensitivityValue

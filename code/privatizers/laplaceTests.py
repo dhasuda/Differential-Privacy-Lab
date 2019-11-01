@@ -9,10 +9,10 @@ class LaplacePrivatizerTests(unittest.TestCase):
     self.assertRaises(ValueError, lambda: laplacePrivatizer.LaplacePrivatizer(-1.))
       
     priv = laplacePrivatizer.LaplacePrivatizer()
-    self.assertEqual(1., priv._scale)
+    self.assertEqual(1., priv._epsilon)
 
     priv = laplacePrivatizer.LaplacePrivatizer(0.5)
-    self.assertEqual(0.5, priv._scale)
+    self.assertEqual(0.5, priv._epsilon)
 
   def testPrivatizeSingleAnswer(self):
     priv = laplacePrivatizer.LaplacePrivatizer()
@@ -39,14 +39,10 @@ class LaplacePrivatizerTests(unittest.TestCase):
     emptyList = priv.privatize([])
     self.assertEqual([], emptyList)
 
-    notEmptyList = priv.privatize([[-1., 0., 1., 2.], [-1., 0.]])
-    self.assertEqual(len(notEmptyList), len([[-1., 0., 1., 2.], [-1., 0.]]))
+    notEmptyList = priv.privatize([[-1., 0., 1., 2.], [-1., 0., 3., 10.]])
+    self.assertEqual(len(notEmptyList), len([[-1., 0., 1., 2.], [-1., 0., 3., 10.]]))
     for value in notEmptyList:
       self.assertTrue(type(value) == list)
-
-    notEmptyList = priv.privatize([[-1., 0., 1., 2.], [-1., 0.], 1.])
-    self.assertEqual(len(notEmptyList), len([[-1., 0., 1., 2.], [-1., 0.], 1.]))
-    self.assertTrue(type(notEmptyList[-1]) == float)
 
 if __name__ == "__main__":
   unittest.main()
