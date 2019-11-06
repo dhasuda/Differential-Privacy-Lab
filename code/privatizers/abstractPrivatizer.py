@@ -6,21 +6,15 @@ class AbstractPrivatizer(ABC):
       if (len(data) == 0):
         return []
       privatizedData = []
-      counter = 0
       sensitivity = sensitivityValue
-
-      sensitivityGeneratedList = []
+ 
       if (type(data[0]) == list and sensitivityList == None):
-          for i in range(len(data[0])):
-            column = [row[i] for row in data]
-            singleSensitivityValue = abs(max(column) - min(column))
-            sensitivityGeneratedList.append(singleSensitivityValue)
-      elif (sensitivityList != None):
-        sensitivityGeneratedList = sensitivityList
+        sensitivityList = getSensitivityList(data)
 
+      counter = 0
       for value in data:
         if (type(value) == list):
-          sensitivity = sensitivityGeneratedList
+          sensitivity = sensitivityList
         else:
           if (type(sensitivityValue) == float):
             sensitivity = sensitivityValue
@@ -34,6 +28,15 @@ class AbstractPrivatizer(ABC):
 
     else:
       return self.privatizeSingleAnswer(data, sensitivityValue)
+    
+  def getSensitivityList(self, dataList):
+    sensitivityGeneratedList = []
+    for i in range(len(dataList[0])):
+      column = [row[i] for row in dataList]
+      singleSensitivityValue = abs(max(column) - min(column))
+      sensitivityGeneratedList.append(singleSensitivityValue)
+    return sensitivityGeneratedList
+
     
   @abstractmethod
   def privatizeSingleAnswer(self, value, sensitivityValue):
