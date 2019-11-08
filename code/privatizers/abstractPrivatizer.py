@@ -9,7 +9,7 @@ class AbstractPrivatizer(ABC):
       sensitivity = sensitivityValue
  
       if (type(data[0]) == list and sensitivityList == None):
-        sensitivityList = getSensitivityList(data)
+        sensitivityList = self.getSensitivityList(data)
 
       counter = 0
       for value in data:
