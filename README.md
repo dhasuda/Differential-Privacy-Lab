@@ -1,4 +1,10 @@
-# Differential-Privacy-Lab
+# Differential Privacy Lab
+## Getting Started
+
+If you want to get started in Differential Privacy, go to the `Getting Started` folder (https://github.com/dhasuda/Differential-Privacy-Lab/tree/master/Getting%20Started), we managed to document and explain the basics of DP there!
+
+If you already master the basics of DP and just want to implement your own experiments using this Lab, you can follow the steps below to setup everything. I hope it is useful for you!
+
 ## Setup
 
 There is a script `setup.sh` that can help you with that. It creates a brand new environment and install all the dependencies needed for you to run the Differential Privacy Lab. Simply run the script in the terminal
