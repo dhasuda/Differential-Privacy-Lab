@@ -6,4 +6,5 @@ Feel invited to read all the markdown files in this folder. Here is a good seque
 
 0. Context and Motivation
 1. What is Differential Privacy?
-2. 
+2. A first kind of DP Mechanism
+3. Exponential Mechanism
