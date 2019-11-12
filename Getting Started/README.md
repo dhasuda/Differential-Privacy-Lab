@@ -9,3 +9,4 @@ Feel invited to read all the markdown files in this folder. Here is a good seque
 2. A first kind of DP Mechanism
 3. Exponential Mechanism
 4. Laplace Mechanism
+5. Davi's Coefficient
