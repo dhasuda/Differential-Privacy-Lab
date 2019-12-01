@@ -7,7 +7,7 @@ If you already master the basics of DP and just want to implement your own exper
 
 ## Setup
 
-There is a script `setup.sh` that can help you with that. It creates a brand new environment and install all the dependencies needed for you to run the Differential Privacy Lab. Simply run the script in the terminal
+There is a script `setup.sh` that can help you with that. It creates a brand-new environment and install all the dependencies needed for you to run the Differential Privacy Lab. Simply run the script in the terminal
 
 ```
 sh setup.sh
@@ -24,13 +24,13 @@ cd code/
 jupyter notebook
 ```
 
-This will open a new window or tab in your browser of choice. From there, all the availabel directories to have access to all notebooks implemented!
+This will open a new window or tab in your browser of choice. From there, all the available directories to have access to all notebooks implemented!
 
 ## About
-This is part of the gradutaion project of Davi Grossi Hasuda about differential privacy for ITA (Instituto Tecnológico de Aeronáutica).
+This is part of the graduation project of Davi Grossi Hasuda about differential privacy for ITA (Instituto Tecnológico de Aeronáutica).
 
-In this project, the Laplacian Mechanism to keep data private is implemented and analysed when using some of the most commom AI algorithms, such as Decision Tree and Machine Learning.
+In this project, the Laplacian Mechanism to keep data private is implemented and analyzed when using some of the most common AI algorithms, such as Decision Tree and Machine Learning.
 
 This project is oriented by Juliana de Melo Bezerra (http://www.comp.ita.br/~juliana/)
 
-In this repo there is a more refined and easy to understand version of the original repo used during most of the project development, which you can find here: https://github.com/dhasuda/tg-differential-privacy
+In this repo there is a more refined and easier to understand version of the original repo used during most of the project development, which you can find here: https://github.com/dhasuda/tg-differential-privacy
