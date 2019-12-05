@@ -16,5 +16,7 @@ Feel invited to read all the markdown files in this folder. Here is a good seque
 
 [5. Davi's Coefficient](https://github.com/dhasuda/Differential-Privacy-Lab/blob/master/Getting%20Started/5.%20Davi's%20Coefficient.md)
 
-[6. Other kind of DP](https://github.com/dhasuda/Differential-Privacy-Lab/blob/master/Getting%20Started/6.%20Other%20kind%20of%20DP.md)
+[6. The SSE Recipe](https://github.com/dhasuda/Differential-Privacy-Lab/blob/master/Getting%20Started/6.%20The%20SSE%20Recipe.md)
+
+[7. Other kind of DP](https://github.com/dhasuda/Differential-Privacy-Lab/blob/master/Getting%20Started/7.%20Other%20kind%20of%20DP.md)
 
