@@ -26,6 +26,10 @@ jupyter notebook
 
 This will open a new window or tab in your browser of choice. From there, all the available directories to have access to all notebooks implemented!
 
+## Tutorial
+
+If you go under the tutorials folder, you'll find some step by step tutorial in designing experiments with Differential Privacy.
+
 ## About
 This is part of the graduation project of Davi Grossi Hasuda about differential privacy for ITA (Instituto Tecnológico de Aeronáutica).
 
